@@ -35,6 +35,7 @@ function About() {
                 <li><strong>Core Logic:</strong> Vanilla JS expert & clean code architecture</li>
                 <li><strong>Backend:</strong> Node, VB, server backups & SQL databases</li>
                 <li><strong>Creative:</strong> React UI layouts & HTML5 game development</li>
+                <li><strong>Media:</strong> Technical video guides & promotional media</li> {/* Added this! */}
               </ul>
             </div>
           </div>

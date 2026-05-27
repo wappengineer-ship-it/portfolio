@@ -14,7 +14,7 @@ function Skills(){
     ];
 
     return (
-        <section className={styles.skills}>
+        <section className={styles.skills} id="skills">
             <h2>My Skills</h2>
 
             <div className={styles.container}>

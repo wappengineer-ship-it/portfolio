@@ -10,7 +10,7 @@ function Hero() {
         games and creative projects.
       </p>
 
-      <button>View Projects</button>
+      <a href="#skills" className={styles.buttonLink}>View Skills</a>
     </section>
   );
 }

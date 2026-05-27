@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+}
+
+.links li {
+  cursor: pointer;
+}
+
+.links li:hover {
+  opacity: .7;
+}

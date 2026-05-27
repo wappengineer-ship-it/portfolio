@@ -1,0 +1,27 @@
+.skills {
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px 30px;
+
+  border-radius: 12px;
+
+  background: #1e293b;
+
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

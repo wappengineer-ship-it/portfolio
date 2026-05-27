@@ -1,0 +1,28 @@
+.hero {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  width: 500px;
+}
+
+.hero button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}

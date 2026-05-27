@@ -1,0 +1,109 @@
+.aboutPage {
+  background-color: #0f172a;
+  color: white;
+  min-height: 80vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Subtle underline accent line under the page title */
+.title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #38bdf8; /* Uses that awesome electric sky blue */
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.leadText {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.bodyText {
+  font-size: 1.05rem;
+  color: #cbd5e1; /* Soft gray for comfortable reading text */
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.factColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.factCard {
+  background-color: #1e293b; /* Slate card background matching your skills section */
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.factCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.factCard p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.factCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.factCard li {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.factCard li strong {
+  color: #38bdf8;
+}
+
+/* --- Responsive Mobile Breakpoint --- */
+@media (max-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .leadText {
+    font-size: 1.15rem;
+  }
+}

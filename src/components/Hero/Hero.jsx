@@ -6,7 +6,7 @@ function Hero() {
       <h1>Hello, I'm Julian</h1>
 
       <p>
-        Developer creating websites,
+        Front-end heavy full-stack developer creating websites,
         games and creative projects.
       </p>
 

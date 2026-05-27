@@ -6,7 +6,7 @@ function Hero() {
       <h1>Hello, I'm Julian</h1>
 
       <p>
-        React developer creating websites,
+        Developer creating websites,
         games and creative projects.
       </p>
 

@@ -2,11 +2,14 @@ import styles from "./Skills.module.css";
 
 function Skills(){
     const skills = [
-        "React",
         "JavaScript",
         "HTML",
         "CSS",
-        "Git",
+        "React",
+        "Node",
+        "VB",
+        "SQL",
+        //"Git",
         "Game Development"
     ];
 
@@ -14,7 +17,7 @@ function Skills(){
         <section className={styles.skills}>
             <h2>My Skills</h2>
 
-            <div ClassName={styles.container}>
+            <div className={styles.container}>
                 {skills.map((skill) => (
                     <div
                         key={skill}

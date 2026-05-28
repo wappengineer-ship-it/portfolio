@@ -8,15 +8,31 @@ function Projects(){
       category: 'production',
       title: 'Enterprise Logic Engine & Server Management',
       timeline: '5 Years Professional Experience',
-      description: 'Maintained and optimized custom screen-based software systems running on pure Vanilla JavaScript. Responsible for backend reverse-engineering across Node.js and legacy environments, alongside designing automated nightly data backups for SQL relational databases to ensure zero data loss.',
-      tags: ['Vanilla JS', 'Node.js', 'SQL', 'Server Maintenance']
+      description: 'Maintained and optimized custom screen-based software systems running on pure Vanilla JavaScript. Responsible for backend reverse-engineering across Node.js, VB.net, and MS SQL Server environments, alongside managing nightly data backups for SQL relational databases. Produced official system media showcasing core functional modules including xAccounting, xPay payroll configurations, and our proprietary xTool code automation engine.',
+      tags: ['Vanilla JS', 'Node.js', 'VB.net', 'SQL', 'Server Maintenance'],
+      links: {
+        youtube: 'https://youtube.com/@mirrorbusinesssolutions?si=5y3O4hRzQ-TSuGnx',
+        buttonText: 'Watch System Demos' // Custom button text
+      }
     },
     {
       id: 2,
+      category: 'production',
+      title: 'React To-Do App',
+      timeline: 'Frontend Practice',
+      description: 'A clean, responsive task management application built to master state management, component lifecycles, and interactive user interfaces in React. Features real-time task filtering and persistent local storage synchronization to ensure data stays intact across browser sessions.',
+      tags: ['React', 'JavaScript', 'Local Storage', 'CSS Modules'],
+      links: {
+        github: 'https://github.com', // Add your link when ready!
+        vercel: 'https://vercel.com'  // Add your link when ready!
+      }
+    },
+    {
+      id: 3,
       category: 'game',
       title: 'Rectify: Vanilla JS Canvas RPG Engine',
       timeline: 'Hand-Coded Milestone',
-      description: 'A retro side-scrolling survival RPG built completely from scratch using pure JavaScript and HTML5 Canvas. Features procedural shifting terrain algorithms, a coordinate-tracking event trigger matrix, persistent local storage data saving, and time-differential real-time banking calculations.',
+      description: 'A retro side-scrolling survival RPG built completely by hand using pure JavaScript and HTML5 Canvas. Features procedural shifting terrain algorithms, a coordinate-tracking event trigger matrix, persistent local storage data saving, and time-differential real-time banking calculations.',
       tags: ['Vanilla JS', 'HTML5 Canvas', 'Game Loop', 'Local Storage'],
       links: {
         github: 'https://github.com/wappengineer-ship-it/rectify-old', 
@@ -24,23 +40,27 @@ function Projects(){
       }
     },
     {
-      id: 3,
+      id: 4,
       category: 'game',
-      title: 'Void Survivor & 2D Top-Down RPGs',
-      timeline: 'Modern Prototypes',
-      description: 'Independent browser-based game projects developed utilizing an efficient, modern AI-assisted prototyping workflow. Focused engineering efforts on building custom character sprites, fine-tuning complex physics merger logic, virtual joystick mobile optimization, and mechanics tuning.',
-      tags: ['React', 'JavaScript', 'AI Workflows', 'Mobile Responsive'],
+      title: "David: King's Ascension",
+      timeline: 'Modern Prototyping',
+      description: 'A mobile-friendly 2D top-down retro RPG exploring mechanics architecture through an efficient, AI-assisted development workflow. Implemented precise custom character sprite animations, complex coordinate collision logic, physical map boundaries, and an optimized virtual joystick interface for touch screens.',
+      tags: ['HTML5', 'JavaScript', 'AI Workflows', 'Mobile Responsive'],
       links: {
         itch: 'https://itch.io'
       }
     },
     {
-      id: 4,
+      id: 5,
       category: 'media',
       title: 'Technical Documentation & Product Media',
       timeline: 'Product Communications',
       description: 'Produced comprehensive visual guides, software walkthroughs, and promotional video media for complex production applications. Bridged the gap between engineering and user experience by translating deep backend mechanics into accessible interactive materials.',
-      tags: ['Video Production', 'Technical Writing', 'Product Demos', 'UX/UI Training']
+      tags: ['Video Production', 'Technical Writing', 'Product Demos', 'UX/UI Training'],
+      links: {
+        youtube: 'https://youtube.com/@mirrorbusinesssolutions?si=5y3O4hRzQ-TSuGnx',
+        buttonText: 'View Video Channel' // Custom button text
+      }
     }
   ];
 
@@ -79,9 +99,20 @@ function Projects(){
                       View Code (GitHub)
                     </a>
                   )}
+                  {project.links.vercel && (
+                    <a href={project.links.vercel} target="_blank" rel="noreferrer" className={`${styles.linkButton} ${styles.primaryLink}`}>
+                      Live Demo (Vercel)
+                    </a>
+                  )}
                   {project.links.itch && (
                     <a href={project.links.itch} target="_blank" rel="noreferrer" className={`${styles.linkButton} ${styles.primaryLink}`}>
                       Play on Itch.io
+                    </a>
+                  )}
+                  {/* Dynamic YouTube Button with smart text replacement */}
+                  {project.links.youtube && (
+                    <a href={project.links.youtube} target="_blank" rel="noreferrer" className={`${styles.linkButton} ${styles.primaryLink}`}>
+                      {project.links.buttonText || 'Watch on YouTube'}
                     </a>
                   )}
                 </div>
